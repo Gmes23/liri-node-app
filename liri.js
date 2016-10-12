@@ -23,7 +23,6 @@ for (var i=3; i<b.length; i++){
 
 
 
-
 switch(a) {
     case "my-tweets":
         myTweets();
@@ -85,9 +84,9 @@ function movieThis(){
 }
 
 function doSomething(){
-    fs.readfile('random.txt' , 'utf8', function(error , data)){
-        var d = data.split(' , ')
-        spotifySong(d[1]);
-    }
-
+    fs.readFile('random.txt' , 'utf8', function(error , data){
+        var d = data.split(',')
+        spotifyThis(d[1]);
+    });
 }
+
